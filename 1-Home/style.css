@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-image: url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu-bar{
+    background-color: orange;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white; 
+}
+
+.active, .menu-bar ul li:hover{
+    background-color: orangered;
+}
+
+.sub-menu{
+    display:none;
+}
+
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: orange;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
